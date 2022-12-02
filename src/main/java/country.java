@@ -29,7 +29,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class country extends HttpServlet { 
 
-  
+  /**
+   * Set jdbc connection
+   */
 
     private static final long serialVersionUID = 1L; 
 
@@ -75,7 +77,9 @@ public class country extends HttpServlet {
 
   
 
-           
+           /**
+            * Set html format to retrieve data from db.
+            */
 
             response.setContentType("text/html"); 
 
@@ -92,6 +96,10 @@ public class country extends HttpServlet {
                     +"<td><b>region</b></td>"+ "<td><b>Population</b></td>" ); 
 
   
+
+/**
+   * Set query statement from db.
+   */
 
          
             Statement tm = ct.createStatement(); 
