@@ -31,7 +31,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class city extends HttpServlet { 
 
-  
+  /**
+   * Set jdbc connection
+   */
 
     private static final long serialVersionUID = 1L; 
 
@@ -77,6 +79,10 @@ public class city extends HttpServlet {
 
   
 
+/**
+   * Set html format for data query.
+   */
+
            
 
             response.setContentType("text/html"); 
@@ -91,9 +97,11 @@ public class city extends HttpServlet {
 
             pw.println("<table border=1><tr>" + "<td><b>name</b></td>" + "<td><b>countrycode</b></td>" + "<td><b>District</b></td>"
 
-                    + "<td><b>Population</b></td>" ); 
+                    + "<td><b>Population</b></td>
 
-  
+   /**
+   * Set query statement to retrieve from db.
+   */
 
          
             Statement tm = ct.createStatement(); 
@@ -127,6 +135,10 @@ public class city extends HttpServlet {
             pw.println("</table></body></html>"); 
 
   
+
+/**
+   * s Close connections 
+   */
 
          
             gh.close(); 
