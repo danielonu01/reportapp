@@ -1,0 +1,25 @@
+Full uses cases
+
+City report
+
+A user: Actor
+Goal: The Actor to view report on city population from high to low
+Scope: A servlet web application
+Pre Condition: Actor opens home page
+Success End condition: Actor clicks on on the Query button and finds the result required report on city population
+
+A country report
+
+A user: Actor
+Goal: The actor to view report on city population from high to low
+Scope: A servlet web Application
+Pre Condition: Actor opens home page
+Success End Condition: Actor clicks on the query button and finds the result required report on country population
+
+A capital city report
+
+A user: Actor
+Goal: The actor to view report on capital city population from high to low
+Scope: A servlet web Application
+Pre Condition: Actor opens home page
+Success End Condition: Actor clicks on the query button and finds the result required report on Capital city population

@@ -1,0 +1,8 @@
+FROM tomcat:9.0
+MAINTAINER 40521361@live.napier.ac.uk
+
+ENV JPDA_ADDRESS 8000
+EXPOSE 8000
+EXPOSE 8080
+ENTRYPOINT ["catalina.sh", "jpda","run"]
+CMD echo "app is launched"
