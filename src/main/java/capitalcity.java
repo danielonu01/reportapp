@@ -29,7 +29,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class capitalcity extends HttpServlet { 
 
-  
+  /**
+   * Set jdbc connection
+   */
 
     private static final long serialVersionUID = 1L; 
 
@@ -81,7 +83,11 @@ public class capitalcity extends HttpServlet {
 
             PrintWriter pw = response.getWriter(); 
 
-  
+
+
+  /**
+   * set html format for jdbc data.
+   */
 
             pw.println("<html><body>"); 
 
@@ -89,10 +95,11 @@ public class capitalcity extends HttpServlet {
 
             pw.println("<table border=1><tr>" + "<td><b>name</b></td>" + "<td><b>country</b></td>" 
 
-                    + "<td><b>Population</b></td>" ); 
-
-  
-
+                    + "<td><b>Population</b></td>
+   
+   /**
+   * Set query statement to retrieve data.
+   */
          
             Statement tm = ct.createStatement(); 
 
@@ -123,6 +130,10 @@ public class capitalcity extends HttpServlet {
             pw.println("</table></body></html>"); 
 
   
+
+/**
+   * close connection 
+   */
 
          
             gh.close(); 
